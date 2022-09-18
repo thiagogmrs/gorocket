@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GoRocket, Página de Login e Cadastro">
+    <link rel="stylesheet" href="style.css">
+    <title>GoRocket | Login</title>
+</head>
+<body>
+    <div id="wrapper">
+        <!-- lado img -->
+            <div class="side-left">
+                <div class="logo">
+                <h2><span>Go</span>Rocket</h2>
+                </div>
+                <div class="text cor-1">
+                    <h1>Faça o seu login aqui na <span>#GoRocket</span> para embarcar em uma experiência <span>incrível</span>.</h1>
+                </div>
+                <div class="img">
+                    <img src="./assets/img-project.gif" height="auto" width="400" alt="GoRocket Ilustration Form">
+                </div>
+            </div>
+        <!-- lado form -->
+        <div class="side-right">
+            <form action="page.php" method="get" id="form">
+                <div class="login">
+                <h2>Login</h2>
+                </div>
+                <div class="wrapper-c">
+                    <div class="c-1">
+                        <input type="email" name="email" id="email" placeholder="Seu email ou número" required>
+                    </div>
+                    <div class="c-2">
+                        <input type="password" name="password" id="password" placeholder="Digite sua senha">
+                    </div>
+                    <div id="btn">
+                        <input type="submit" value="Entrar">
+                    </div>
+                </div>
+                <div class="new">
+                    <button type="button" id="btn">Criar conta</button>
+                </div>
+                <div class="acess">
+                    <div class="teste">
+                      <a href="/"><div class="log github">
+                      <i class="fa-brands fa-github fa-2x fa-media cor-1"></i>
+                        <p>Acessar com GitHub</p>
+                     </div></a>
+                     </div>
+                     <div class="teste">
+                      <a href="/"><div class="log google">
+                      <i class="fa-brands fa-google fa-2x fa-media cor-1"></i>
+                        <p>Acessar com Google</p>
+                    </div></a>
+                    </div>
+                    <div class="teste">
+                    <a href="/"><div class="log linkedin">
+                        <i class="fa-brands fa-linkedin fa-2x fa-media cor-1"></i>
+                        <p>Acessar com Linkedin</p>
+                    </div></a>
+                    </div>
+                </div>
+            </form>
+        </div>
+   </div>
+     <!-- site de onde foi retirada a imagem usada na página
+        <a href="https://storyset.com/people">People illustrations by Storyset</a> -->
+    <script src="https://kit.fontawesome.com/fd48cbd2ce.js" crossorigin="anonymous"></script>
+</body>
+</html>
