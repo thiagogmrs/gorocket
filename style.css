@@ -160,7 +160,7 @@ a{
 }
 @media (max-width: 590px){
     .btn-form{
-       align-self: end !important;
+       align-self: flex-end;
     }
 }
 input[type='submit']{
