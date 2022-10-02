@@ -79,12 +79,17 @@ a{
     justify-self: center;
     align-self: start;
 }
+@media (max-width: 590px){
+    .img img{
+        width: 280px;
+    }
+}
 
 .side-right{
     grid-column: 3;
     display: grid;
     place-content: center;
-    grid-template-rows: minmax(50px, 100px)  1fr minmax(50px, 100px);
+    grid-template-rows: minmax(50px, 180px)  1fr minmax(50px, 200px);
 }
 @media (max-width: 980px){
     .side-right{
@@ -95,7 +100,7 @@ a{
 #form{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 80px 80px 40px 200px;
+    grid-template-rows: 80px 80px 40px 150px;
     gap: 30px;
     background: rgb(245, 245, 255);
     padding: 30px;
@@ -182,19 +187,30 @@ input[type='submit']{
     display: grid;
     grid-column: 1/-1;
     grid-row: 4;
-    gap: 15px;
-}
-.log{
-    display: grid;
-    grid-template-columns: auto 1fr;
-    align-items: center;
-    gap: 30px;
     justify-content: center;
+}
+
+.log{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-items: center;
     width: 100%;
+    padding: 10px 20px;
+}
+.log:hover{
+    background: #fff;
+}
+.log a {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+     
 }
 .log p{
     color:#a59fff;
     text-transform: lowercase;
+    text-align: right;
 }
 .new{
     border-radius: 30px;
@@ -212,12 +228,4 @@ input[type='submit']{
 .new button:hover{
     background: #322bae;
 }
-.teste{
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-}
-.teste:hover{
-    background: #fff;
-}
+
